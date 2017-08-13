@@ -23,7 +23,11 @@
                     'gravatar' => ['Martin\Helpers\Classes\Gravatar', 'filterGravatar'],
                     'pr'       => ['Martin\Helpers\Classes\PrintR'  , 'pr'],
                     'prd'      => ['Martin\Helpers\Classes\PrintR'  , 'prd'],
+
                 ],
+                'functions' => [
+                    'isActive' => ['Martin\Helpers\Classes\CSS', 'isActive'],
+                ]
             ];
         }
 
