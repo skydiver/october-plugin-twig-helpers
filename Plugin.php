@@ -26,8 +26,9 @@ class Plugin extends PluginBase {
 
             ],
             'functions' => [
-                'isActive'      => ['Martin\Helpers\Classes\CSS', 'isActive'],
-                'isActiveArray' => ['Martin\Helpers\Classes\CSS', 'isActiveArray'],
+                'isActive'        => ['Martin\Helpers\Classes\CSS'   , 'isActive'],
+                'isActiveArray'   => ['Martin\Helpers\Classes\CSS'   , 'isActiveArray'],
+                'staticGoogleMap' => ['Martin\Helpers\Classes\GoogleMaps', 'staticMap'],
             ]
         ];
     }
