@@ -1,0 +1,10 @@
+{
+    "name": "martin/helepers-plugin",
+    "type": "october-plugin",
+    "description": "Twig Helpers to make life easier",
+    "homepage": "https://github.com/skydiver/",
+    "keywords": ["october", "cms", "twig", "helpers"],
+    "require": {
+        "nochso/html-compress-twig": "^2.0"
+    }
+}

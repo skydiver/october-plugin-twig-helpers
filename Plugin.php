@@ -3,6 +3,7 @@
 namespace Martin\Helpers;
 
 use Backend;
+use Event;
 use System\Classes\PluginBase;
 
 class Plugin extends PluginBase {
@@ -17,6 +18,13 @@ class Plugin extends PluginBase {
         ];
     }
 
+    public function boot() {
+        Event::listen('cms.page.beforeRenderPage', function($controller, $page) {
+            $twig = $controller->getTwig();
+            $twig->addExtension(new \nochso\HtmlCompressTwig\Extension());
+        });
+    }
+    
     public function registerMarkupTags() {
         return [
             'filters' => [
