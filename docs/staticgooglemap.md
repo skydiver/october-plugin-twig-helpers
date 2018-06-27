@@ -14,4 +14,4 @@ Draws a static Google Map.
 ```
 
 ## More Info
-(Google Maps Platform)[https://developers.google.com/maps/documentation/maps-static/intro]
+[Google Maps Platform](https://developers.google.com/maps/documentation/maps-static/intro)
